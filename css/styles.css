@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background-color: #e8e9f3;
+  font: 100% Helvetica, sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+
+/******************NAVBAR*******************/
+#navbar {
+  background-color: #F7D565;
+  height: 4rem;
+  padding-inline: 10%;
+  clear: both;
+  text-align: center;
+}
+
+.logo * {
+  float: left;
+  margin-top: 0.5rem;
+}
+.logo img {
+  height: 3rem;
+  margin-inline: 1rem;
+}
+.logo h1 {
+  font-family: Georgia, serif;
+  color: darkviolet;
+  font-size: 2.5rem;
+}
+
+.admin {
+  float: right;
+  text-align: center;
+  height: 2.5rem;
+  margin-top: 0.75rem;
+  background-color: lightgoldenrodyellow;
+  border-radius: 0.5rem;
+  border-color: transparent;
+  font-size: 1.2rem;
+}
+
+/******************CONTENT*******************/
+#content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-inline: 10%;
+}
+#content h2 {
+  font-family: Georgia, serif;
+  font-size: 3.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.content {
+  width: 50%;
+  float: left;
+  padding-inline: 5%;
+  padding-top: 1.5rem;
+}
+.content p {
+  font-size: 1.5rem;
+}
+
+/******************MENU*******************/
+h3 {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
