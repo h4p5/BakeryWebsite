@@ -27,6 +27,7 @@ hr{
 }
 p{
     margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 /******************NAVBAR*******************/
@@ -66,7 +67,7 @@ p{
 /******************CONTENT*******************/
 #content{
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     margin-inline: 10%;
     h2{
         font-family: $menu-font;
@@ -134,3 +135,19 @@ textarea{
 }
 
 
+/******************FOOTER*******************/
+footer{
+    clear: both;
+    padding-top: 4rem;
+}
+#contacto{
+    background-color: #F7D565;    
+    padding-inline: 10%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.brand{
+    font-style: normal;
+    font-family: $menu-font;
+    color: darkviolet;
+}
