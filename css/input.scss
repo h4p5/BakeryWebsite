@@ -76,3 +76,26 @@ h3{
     font-style: italic;
     font-size: 2rem;
 }
+.wrapper-sabores{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    img{
+        width: 100%;
+    }
+    span{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+li{
+    font-size: 1.5rem;
+}
+.wrapper-adornos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    img{
+        width: 100%;
+    }
+}
