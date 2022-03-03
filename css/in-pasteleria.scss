@@ -1,1 +1,14 @@
 @use 'base';
+
+.contenido{
+    margin-inline: 10%;
+    margin-top: 2rem;
+    padding-inline: 5%;
+    h2{
+        margin: 0;
+        padding-bottom: 1.5rem;
+    }
+    p{
+        font-size: 1.5rem
+    }
+}

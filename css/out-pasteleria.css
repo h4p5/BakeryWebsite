@@ -87,4 +87,17 @@ footer {
   color: darkviolet;
 }
 
+.contenido {
+  margin-inline: 10%;
+  margin-top: 2rem;
+  padding-inline: 5%;
+}
+.contenido h2 {
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+.contenido p {
+  font-size: 1.5rem;
+}
+
 /*# sourceMappingURL=out-pasteleria.css.map */
