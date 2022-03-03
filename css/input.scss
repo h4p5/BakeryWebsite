@@ -15,6 +15,19 @@ body{
         text-decoration: none;
     }
 }
+h3{
+    font-family: $menu-font;
+    font-style: italic;
+    font-size: 2rem;
+}
+li{ font-size: 1.5rem;}
+hr{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+p{
+    margin-bottom: 0.5rem;
+}
 
 /******************NAVBAR*******************/
 #navbar{
@@ -58,7 +71,8 @@ body{
     h2{
         font-family: $menu-font;
         font-size: 3.5rem;
-        text-align: center;
+        //text-align: center;
+        margin-left: 5%;
         font-style: italic;
     }
 }
@@ -71,31 +85,52 @@ body{
 }
 
 /******************MENU*******************/
-h3{
-    font-family: $menu-font;
-    font-style: italic;
-    font-size: 2rem;
-}
-.wrapper-sabores{
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-    img{
-        width: 100%;
-    }
+#menu{
+    img{ width: 100%;}
     span{
         text-align: center;
         font-size: 1.5rem;
     }
 }
-li{
-    font-size: 1.5rem;
-}
-.wrapper-adornos{
+.wrap{
     display: grid;
-    grid-template-columns: auto auto auto auto;
     align-items: center;
-    img{
-        width: 100%;
-    }
 }
+#sabores{ grid-template-columns: auto auto auto;}
+#adornos{
+    grid-template-columns: auto auto auto auto;
+    span{ font-size: 1.2rem;}
+}
+
+/******************FORMULARIO*******************/
+label{ font-size: 1.2rem;}
+#formulario{hr{width: 75%;}}
+.input{
+    width: 75%;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border-width: 0.1rem;
+    font-size: 1.2rem;
+}
+.text{
+    height: 2rem;
+    padding-inline: 0.75rem;
+}
+textarea{
+    height: 5rem;
+    padding: 0.2rem;
+}
+.btn{
+    border-radius: 5px;
+    background-color: white;
+    border-width: 3px;
+    font-size: 1.2rem;
+}
+.submit:hover{
+    background-color: green;
+}
+.reset:hover{
+    background-color: yellow;
+}
+
+

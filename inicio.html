@@ -43,7 +43,7 @@
             <br>
             <p>Sabores de los pasteles:</p>
             <!-- imgs sabores -->
-            <div class="wrapper-sabores">
+            <div id="sabores" class="wrap">
                 <img src="img/inicio/vanilla.png" alt="Imagen vainilla">
                 <img src="img/inicio/strawberry.png" alt="Imagen fresa">
                 <img src="img/inicio/chocolate.png" alt="Imagen chocolate">
@@ -59,18 +59,25 @@
                 <li>Pasteles de 3 sabores: $250.00</li>
             </ul>
             <p>Adornos:</p>
-            <div class="wrapper-adornos">
+            <!-- Adornos -->
+            <div id="adornos" class="wrap">
                 <img src="img/inicio/phrase.png" alt="Adorno de frase">
                 <img src="img/inicio/contorno.png" alt="Adorno de contorno">
                 <img src="img/inicio/frutas.png" alt="Adorno de frutas">
                 <img src="img/inicio/top-chocolates.png" alt="Adorno de chocolates">
-            </div>
-            <ul>
-                <li>Escritura de frase con chantilli, $7.00</li>
-                <li>Contorno de chantilli, $7.00</li>
-                <li>Topping de frutas, $15.00</li>
-                <li>Topping de chocolates, $10.00</li>
-            </ul>
+                <span>Frase</span>
+                <span>Contorno de</span>
+                <span>Topping de</span>
+                <span>Topping de</span>
+                <span>de Chantilli</span>
+                <span>Chantilli</span>
+                <span>Frutas</span>
+                <span>Chocolates</span>
+                <span>$7.00</span>
+                <span>$7.00</span>
+                <span>$15.00</span>
+                <span>$10.00</span>
+            </div> <!-- Adornos -->
         </div> <!-- Menu -->
 
         <div id="formulario" class="content">
@@ -79,14 +86,15 @@
             <form action="submit">
                 <!-- Datos del usuario -->
                 <label for="nombre">Nombre:</label><br>
-                <input type="text" name="nombre" id="nombre" placeholder="Juan Pérez"><br>
+                <input class="text input" type="text" name="nombre" id="nombre" placeholder="Juan Pérez"><br>
                 <label for="telefono">Teléfono: </label><br>
-                <input type="tel" name="telefono" id="telefono" placeholder="5512345678" maxlength="10"><br>
+                <input class="text input" type="tel" name="telefono" id="telefono" placeholder="5512345678" maxlength="10"><br>
                 <label for="email">Correo electrónico:</label><br>
-                <input type="email" name="email" id="email" placeholder="correo@mail.com"><br><br>
+                <input class="text input" type="email" name="email" id="email" placeholder="correo@mail.com">
+                <hr>
 
                 <!-- Sabores -->
-                Selección de sabores: <br>
+                <p>Selección de sabores:</p>
                 <input type="checkbox" name="vainilla" id="vainilla" value="vainilla">
                 <label for="vainilla">Vainilla</label><br>
                 <input type="checkbox" name="fresa" id="fresa" value="fresa">
@@ -95,7 +103,7 @@
                 <label for="chocolate">Chocolate</label><br><br>
 
                 <!-- Adornos -->
-                Selección de adornos: <br>
+                <p>Selección de adornos:</p>
                 <input type="checkbox" name="frase" id="frase" value="frase">
                 <label for="frase">Escritura de frase con chantilli</label><br>
                 <input type="checkbox" name="contorno" id="contorno" value="contorno">
@@ -106,13 +114,12 @@
                 <label for="t-chocolates">Topping de chocolates</label><br><br>
 
                 <!-- Observaciones -->
-                <label for="observaciones">Observaciones adicionales</label><br>
-                <textarea name="observaciones" id="observaciones" cols="30"
-                    rows="10">Detalles del pedido...</textarea><br><br>
+                <p>Obersvaciones adicionales: </p>
+                <textarea class="input" name="observaciones" id="observaciones" cols="30" rows="10" placeholder="Detalles del pedido..."></textarea><br><br>
 
                 <!-- Botones -->
-                <input type="reset" value="Limpiar pedido">
-                <input type="submit" value="Enviar pedido">
+                <input class="btn reset" type="reset" value="Limpiar pedido">
+                <input class="btn submit" type="submit" value="Enviar pedido">
             </form> <!-- Formulario de pedido -->
         </div> <!-- Formulario de pedido -->
 
