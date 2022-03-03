@@ -40,61 +40,71 @@
         <h2>Panel de Administrador</h2>
 
         <!-- Inventario de sabores -->
-        <div id="inv-sabores">
+        <div id="inv-sabores" class="division">
             <h3>Inventario de saborizantes</h3>
             <p>Ingredientes restantes para realizar pasteles: </p>
             <table>
-                <!-- <caption>Inventario de saborizantes</caption> -->
-                <thead>
+                <tr class="t-header">
                     <th>Sabor</th>
-                    <th>Cantidad</th>
-                </thead>
-                <tr>
-                    <td style="border: 1px solid black;">Vainilla</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">20</td style="border: 1px solid black;">
+                    <th class="c-pad">cant</th>
+                    <th>Acciones</th>
                 </tr>
                 <tr>
-                    <td style="border: 1px solid black;">Fresa</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">22</td style="border: 1px solid black;">
+                    <td>Vainilla</td>
+                    <td>20</td>
+                    <td><button class="btn btn-update">Update</button></td>
                 </tr>
                 <tr>
-                    <td style="border: 1px solid black;">Chocolate</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">16</td style="border: 1px solid black;">
+                    <td>Fresa</td>
+                    <td>22</td>
+                    <td><button class="btn btn-update">Update</button></td>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                    <td>16</td>
+                    <td><button class="btn btn-update">Update</button></td>
                 </tr>
             </table> <!-- Inventario de saborizantes -->
         </div> <!-- Inventario sabores -->
 
-        <div id="inv-adornos">
+        <div id="inv-adornos" class="division">
             <h3>Inventario de adornos</h3>
             <p>Materiales y herramientas disponibles para adornar los pasteles: </p>
             <table>
-                <thead>
+                <tr class="t-header">
                     <th>Herramienta</th>
-                    <th>Cantidad</th>
-                </thead>
-                <tr>
-                    <td style="border: 1px solid black;">Moldes para frases</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">14</td style="border: 1px solid black;">
+                    <th class="c-pad">cant</th>
+                    <th>Acciones</th>
                 </tr>
                 <tr>
-                    <td style="border: 1px solid black;">Chantilli colores</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">26</td style="border: 1px solid black;">
+                    <td>Moldes para frases</td>
+                    <td>14</td>
+                    <td><button class="btn btn-update">Update</button></td>
                 </tr>
                 <tr>
-                    <td style="border: 1px solid black;">Latas de frutas</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">8</td style="border: 1px solid black;">
+                    <td>Chantilli colores</td>
+                    <td>26</td>
+                    <td><button class="btn btn-update">Update</button></td>
                 </tr>
                 <tr>
-                    <td style="border: 1px solid black;">Empaques de chocolates</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">14</td style="border: 1px solid black;">
+                    <td>Latas de frutas</td>
+                    <td>8</td>
+                    <td><button class="btn btn-update">Update</button></td>
+                </tr>
+                <tr>
+                    <td>Empaques de chocolates</td>
+                    <td>14</td>
+                    <td><button class="btn btn-update">Update</button></td>
                 </tr>
             </table> <!-- Inventario de adornos -->
         </div> <!-- Inventario de adornos disponibles -->
+
+
         <div id="pedidos">
             <h3>Pedidos pendientes</h3>
-            <table>
-                <thead>
-                    <th>ID Pedido</th>
+            <table class="pedidos">
+                <tr class="t-header">
+                    <th>ID</th>
                     <th>Fecha</th>
                     <th>Cliente</th>
                     <th>Sabor(es)</th>
@@ -102,28 +112,30 @@
                     <th>Descripción</th>
                     <th>Teléfono</th>
                     <th>email</th>
-                </thead>
-                <tr>
-                    <td style="border: 1px solid black;" style="border: 1px solid black;">001</td
-                        style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">26 Feb 22</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">Juan Pérez</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">Vainilla, Chocolate</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">Frase</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">Pastel para 20 personas</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">55 1234 3241</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">juan.perez@gmail.com</td style="border: 1px solid black;">
+                    <th>Acciones</th>
                 </tr>
                 <tr>
-                    <td style="border: 1px solid black;">002</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">26 Feb 22</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">Ernesto Escamilla</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">Vainilla, Fresa, Chocolate</td
+                    <td>001</td>
+                    <td>26 Feb 22</td>
+                    <td>Juan Pérez</td>
+                    <td>Vainilla, Chocolate</td>
+                    <td>Frase</td>
+                    <td>Pastel para 20 personas</td>
+                    <td>55 1234 3241</td>
+                    <td>juan.perez@gmail.com</td>
+                    <td><button class="btn btn-update">^</button><button class="btn btn-delete">X</button></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>26 Feb 22</td>
+                    <td>Ernesto Escamilla</td>
+                    <td>Vainilla, Fresa, Chocolate</td
                         style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">Frase, Frutas</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">Pastel de 5kg</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">55 4156 3241</td style="border: 1px solid black;">
-                    <td style="border: 1px solid black;">e.escamilla@gmail.com</td style="border: 1px solid black;">
+                    <td>Frase, Frutas</td>
+                    <td>Pastel de 5kg</td>
+                    <td>55 4156 3241</td>
+                    <td>e.escamilla@gmail.com</td>
+                    <td><button class="btn btn-update">^</button><button class="btn btn-delete">X</button></td>
                 </tr>
             </table> <!-- Tabla de pedidos pendientes -->
         </div> <!-- Pedidos pendientes -->
