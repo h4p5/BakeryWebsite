@@ -1,27 +1,5 @@
 @use 'base';
 
-h2{
-    font-family: base.$menu-font;
-    font-size: 3.5rem;
-    //text-align: center;
-    margin-left: 5%;
-    font-style: italic;
-}
-h3{
-    font-family: base.$menu-font;
-    font-style: italic;
-    font-size: 2rem;
-}
-li{ font-size: 1.5rem;}
-hr{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-p{
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
 /******************CONTENT*******************/
 #content{
     margin-top: 2rem;
